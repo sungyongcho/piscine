@@ -12,7 +12,7 @@ breedsRouter.get('', (request, response) => {
         response.render('breeds', {
             time: Date(),
             _title: 'PUG',
-            _message: Response.data.message[0],
+            _message: Response.data.message,
         });
     });
 });
